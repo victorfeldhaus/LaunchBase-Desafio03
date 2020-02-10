@@ -1,0 +1,45 @@
+{% extends "layout.njk" %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LaunchBase - Desafio 3</title>
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="/sobre.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+                <a href="mailto:oi@rocketseat.com.br">Email</a>
+                <a href="tel:+5547992078767">Telefone</a>
+                <a href="/sobre">Sobre</a>
+                <a href="/">Cursos</a>
+
+            </div>
+        </header>
+
+        {% block content %}
+
+        <div id="wrapper">
+            <img src="https://pbs.twimg.com/profile_images/953595371875422210/0pWsfSSp_400x400.jpg" alt="RocketSeat">
+            <h1>RocketSeat</h1>
+            <h2>Treinamentos imersivos de programadores para dominar as tecnologias mais modernas no menor tempo possível.</h2>
+        </div>
+        <div id="tech">
+            <ul>
+                <li>ReactJS</li>
+                <li>React Native</li>
+                <li>Node.Js</li>
+            </ul>
+        </div>
+
+        <div id="redes" class="links">
+            <a href="https://github.com/Rocketseat">Github</a>
+            <a href="https://www.instagram.com/rocketseat_oficial/">Instagram</a>
+            <a href="https://www.facebook.com/rocketseat">Facebook</a>
+        </div>
+        {% endblock %}
+    </body>
+</html>
